@@ -36,7 +36,7 @@ $banco->prepare($cadastrar2)->execute([
     ':logradouro' => $logradourocadastro,
     ':n_casa' => $ncasacadastro,
     ':bairro' => $bairrocadastro,
-    ':cidade' => $cidcadastro
+    ':cidade' => $cidcadastro //a
 ]);
 
 
