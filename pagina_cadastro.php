@@ -26,7 +26,7 @@
 <body>
     
     <form action="auxcadastro.php" method="POST">
-        <h1>CADASTRE-SE AQUI</h1>
+        <h2>CADASTRE-SE AQUI</h2>
 
 
         <label>Nome de Usuario</label>

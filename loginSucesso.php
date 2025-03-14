@@ -25,9 +25,9 @@ $resultado = $banco ->query($select)->fetchALL();
         <td> <?= $linha['id']?> </td>
         <td> <?= $linha['usuario']?></td>
         <td>
-            <a href="#" class="btn btn-primary">Abrir</a>
-            <a href="#" class="btn btn-warning">Editar</a>
-            <a href="#" class="btn btn-danger" >Excluir</a>
+            <a href="./pagina_ficha_usuario.php?id_usuario=<?= $linha['id']?>" class="btn btn-primary">Abrir</a>
+            <a href="./pagina_editar_usuario.php?id_usuario=<?= $linha['id']?>" class="btn btn-warning">Editar</a>
+            <a href="./auxdeleter.php?id_usuario=<?= $linha['id']?>" class="btn btn-danger" >Excluir</a>
         </td>
     </tr>
     <?php } ?>

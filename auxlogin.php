@@ -13,9 +13,8 @@ $password = '';
 
 $banco = new PDO ($dsn, $user, $password);
 
-$consultaUsuarioSenha = 'SELECT * FROM tb_usuario WHERE usuario = "' . $userForm . '" AND senha = "' . $passwordForm . '"';
+$consultaUsuarioSenha = 'SELECT * FROM tb_usuario WHERE usuario = "' . $userForm . '" AND senha = "' . $passwordForm . '"'; 
 
-// fetchall mais de uma informação
 //fetch só uma informação
 
 $resultado = $banco->query($consultaUsuarioSenha)->fetch();
