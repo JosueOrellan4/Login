@@ -33,4 +33,5 @@ $banco->prepare($atualizar)->execute([
 ':n_casa' => $ncasaeditar,
 ':bairro' => $bairroeditar,
 ':cidade' => $cideditar
+
 ]);

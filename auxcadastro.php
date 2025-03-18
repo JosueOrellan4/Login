@@ -18,12 +18,7 @@ $ncasacadastro = $_POST['ncasa'];
 $bairrocadastro = $_POST['bairro'];
 $cidcadastro= $_POST['cid'];
 
-$cadastrar = 'INSERT INTO tb_usuario(usuario, senha) VALUES (:usuario, :senha)';
 
-$banco->prepare($cadastrar)->execute([
-    ':usuario' => $usuariocadastro,
-    ':senha' => $senhacadastro
-]);
 
 $cadastrar2= 'INSERT INTO tb_pessoa(nome, ano_nascimento, cpf, telefone_1, telefone_2, logradouro, n_casa, bairro, cidade) VALUES (:nome, :ano_nascimento, :cpf, :telefone_1, :telefone_2, :logradouro, :n_casa, :bairro, :cidade)';
 
@@ -38,6 +33,17 @@ $banco->prepare($cadastrar2)->execute([
     ':bairro' => $bairrocadastro,
     ':cidade' => $cidcadastro //a
 ]);
+
+$id_pessoa = $banco->lastInsertId(); 
+
+$cadastrar = 'INSERT INTO tb_usuario(usuario, senha, id_pessoa) VALUES (:usuario, :senha, :id_pessoa)';
+
+$banco->prepare($cadastrar)->execute([
+    ':usuario' => $usuariocadastro,
+    ':senha' => $senhacadastro,
+    ':id_pessoa' => $id_pessoa
+]);
+
 
 
 
