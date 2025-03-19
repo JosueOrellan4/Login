@@ -15,7 +15,7 @@ A página de login possui as seguintes validações:
 - Caso o usuário ou a senha estejam incorretos, será exibido um alerta indicando "Usuário ou senha inválidos".
 
 
-## 🔐 Validações da Página `pagina_cadastro.php` (Cadastro)
+## 2. 🔐 Validações da Página `pagina_cadastro.php` (Cadastro)
 
 A página de cadastro realiza diversas validações para garantir que os dados inseridos sejam válidos. As validações são as seguintes:
 
