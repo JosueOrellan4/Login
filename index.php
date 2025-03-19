@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -24,8 +26,6 @@
 
 
 
-
-
 <body>
     <form action="auxlogin.php" method="POST">
         <h1>Login</h1>
@@ -35,7 +35,7 @@
         <input type="text" required name="user" >
         
         <label for="" class="">Senha</label>
-        <input type="passsword" maxlength="8" required name="password">
+        <input type="passsword"  required name="password">
         
         <div>
         <input type="submit" class="btn btn-primary" value="Entrar">

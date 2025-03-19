@@ -25,7 +25,7 @@
 
 <body>
     
-    <form action="auxcadastro.php" method="POST">
+<form name="cadastro" action="auxcadastro.php" method="POST" onsubmit="return validarFormulario()">
         <h2>CADASTRE-SE AQUI</h2>
 
 
@@ -36,7 +36,7 @@
         <input type="text" required name="nome" >
 
         <label>Senha</label>
-        <input type="text" required name="senha"  >
+        <input type="text"  required name="senha"  >
 
         <label>Ano Nascimento</label>
         <input type="number" required name="nasc">
@@ -68,7 +68,7 @@
 
 
     </form>
-    
+    <script src="validacoes.js"></script>
 </body>
 
 </html>

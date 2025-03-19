@@ -44,6 +44,11 @@ $banco->prepare($atualizar)->execute([
     'senha' => $senhaupdate ,
 ]);
 
+echo '<script>
+alert("Senha alterada com sucesso!!!");
+window.location.replace("index.php");
+</script>';
+
 } else {
     echo '<script>
     alert("Usuario ou CPF invalido tente novamente");
