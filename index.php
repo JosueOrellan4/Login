@@ -32,10 +32,10 @@
 
 
         <label class="">Usuario</label>
-        <input type="text" name="user" >
+        <input type="text" required name="user" >
         
         <label for="" class="">Senha</label>
-        <input type="passsword" name="password">
+        <input type="passsword" maxlength="8" required name="password">
         
         <div>
         <input type="submit" class="btn btn-primary" value="Entrar">

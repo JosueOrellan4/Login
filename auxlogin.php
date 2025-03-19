@@ -24,6 +24,9 @@ var_dump($resultado);
 if(!empty($resultado) && $resultado != false){ 
     header('location:loginSucesso.php');
 } else {
-    header('location:index.php');
+    echo '<script>
+alert("Usuario ou Senha invalido.")
+window.location.replace("index.php")
+</script>';
 }
 

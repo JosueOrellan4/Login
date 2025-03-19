@@ -57,22 +57,22 @@ $dados = $banco->query($select)->fetch();
 <input type="number"  disabled  value="<?php echo $dados ['cpf']?>">
 
 <label>Telefone 1</label>
-<input type="number" name="tel1"   value="<?php echo $dados ['telefone_1']?>">
+<input type="number" name="tel1" required  value="<?php echo $dados ['telefone_1']?>">
 
 <label>Telefone 2</label>
-<input type="number" name="tel2"   value="<?php echo $dados ['telefone_2']?>">
+<input type="number" name="tel2"  required  value="<?php echo $dados ['telefone_2']?>">
 
 <label>Logradouro</label>
-<input type="text" name="logradouro"   value="<?php echo $dados ['logradouro']?>">
+<input type="text" name="logradouro" required  value="<?php echo $dados ['logradouro']?>">
 
 <label>Numero da Casa</label>
-<input type="number" name="ncasa"   value="<?php echo $dados ['n_casa']?>">
+<input type="number" name="ncasa" required   value="<?php echo $dados ['n_casa']?>">
 
 <label>Bairro</label>
-<input type="text" name="bairro"   value="<?php echo $dados ['bairro']?>">
+<input type="text" name="bairro" required  value="<?php echo $dados ['bairro']?>">
 
 <label>Cidade</label>
-<input type="text" name="cid"   value="<?php echo $dados ['cidade']?>">
+<input type="text" name="cid" required  value="<?php echo $dados ['cidade']?>">
 
 <button type="submit" class="btn btn-primary btn-custom">Enviar</button>
 </form>

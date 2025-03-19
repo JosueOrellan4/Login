@@ -35,3 +35,8 @@ $banco->prepare($atualizar)->execute([
 ':cidade' => $cideditar
 
 ]);
+
+echo '<script>
+alert("Suas informações foram atualizadas com sucesso!!!")
+window.location.replace("loginSucesso.php")
+</script>';

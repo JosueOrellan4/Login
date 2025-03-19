@@ -30,37 +30,37 @@
 
 
         <label>Nome de Usuario</label>
-        <input type="text" name="usuario">
+        <input type="text" required name="usuario">
 
         <label>Nome verdadeiro</label>
-        <input type="text" name="nome">
+        <input type="text" required name="nome" >
 
         <label>Senha</label>
-        <input type="passsword" name="senha">
+        <input type="text" required name="senha"  >
 
         <label>Ano Nascimento</label>
-        <input type="number" name="nasc">
+        <input type="number" required name="nasc">
 
         <label>CPF</label>
-        <input type="number" name="cpf">
+        <input type="number" required name="cpf">
 
         <label>Telefone 1</label>
-        <input type="number" name="tel1">
+        <input type="number" required name="tel1">
 
         <label>Telefone 2</label>
-        <input type="number" name="tel2">
+        <input type="number" required name="tel2">
 
         <label>Logradouro</label>
-        <input type="text" name="logradouro">
+        <input type="text" required name="logradouro">
 
         <label>Numero da Casa</label>
-        <input type="number" name="ncasa">
+        <input type="number" required name="ncasa">
 
         <label>Bairro</label>
-        <input type="text" name="bairro">
+        <input type="text" required name="bairro">
 
         <label>Cidade</label>
-        <input type="text" name="cid">
+        <input type="text" required name="cid">
 
 
 

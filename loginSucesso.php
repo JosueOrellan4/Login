@@ -19,6 +19,7 @@ $resultado = $banco ->query($select)->fetchALL();
     <th>
         <td>id</td>
         <td>usuario</td>
+        <td>Ações</td>
     </th>
     <?php foreach ($resultado as $linha) { ?>
     <tr>
@@ -32,3 +33,4 @@ $resultado = $banco ->query($select)->fetchALL();
     </tr>
     <?php } ?>
 </table>
+<a href="./index.php" class="btn btn-danger">Sair</a>

@@ -22,3 +22,8 @@ $delete = 'DELETE FROM tb_pessoa WHERE id = :id';
 $banco->prepare($delete)->execute([
     'id' => $idDeletar
 ]);
+
+echo '<script>
+alert("Usuario apagado com Sucesso!!!")
+window.location.replace("loginSucesso.php")
+</script>';

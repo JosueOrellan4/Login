@@ -13,13 +13,13 @@
 <h2>Confirmar Nome e CPF para alterar a senha</h2>
 
 <label>Digite seu Nome de Usuario</label>
-<input type="text" name="usuarioconfirmar">
+<input type="text" name="usuarioconfirmar" required>
 
 <label>Digite seu CPF</label>
-<input type="text" name="cpfconfirmar">
+<input type="text" name="cpfconfirmar" required>
 
 <label>Digite sua Nova senha</label>
-<input type="text" name="senhanova">
+<input type="text" name="senhanova" required>
 
 <input type="submit" class="btn btn-primary" value="Enviar">
 

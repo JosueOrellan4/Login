@@ -45,5 +45,8 @@ $banco->prepare($cadastrar)->execute([
 ]);
 
 
-
+echo '<script>
+alert("Cadastrado efetuado com Sucesso!!!")
+window.location.replace("index.php")
+</script>';
 
