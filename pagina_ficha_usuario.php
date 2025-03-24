@@ -33,7 +33,9 @@ $id_usuarios = $_GET['id_usuario'];
 $select = 'SELECT tb_pessoa.*, tb_usuario.* FROM tb_pessoa INNER JOIN tb_usuario ON tb_pessoa.id = tb_usuario.id  WHERE tb_pessoa.id = ' . $id_usuarios;
 
 $dados = $banco->query($select)->fetch();
-?>;
+
+
+?>
 <body>
     
 <form action="#" >

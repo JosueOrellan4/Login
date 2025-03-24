@@ -15,6 +15,7 @@ $resultado = $banco ->query($select)->fetchALL();
 ?>
 
 
+
 <table>
     <th>
         <td>id</td>
@@ -34,3 +35,4 @@ $resultado = $banco ->query($select)->fetchALL();
     <?php } ?>
 </table>
 <a href="./index.php" class="btn btn-danger">Sair</a>
+
